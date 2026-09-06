@@ -33,13 +33,16 @@ android.minapi = 24
 # (str) Android NDK version
 android.ndk = 25b
 
+# (list) The Android archs to build for (hanya arm64-v8a agar cepat dan tidak kehabisan log/memori)
+android.archs = arm64-v8a
+
 # (bool) Accept SDK license automatically
 android.accept_sdk_license = True
 
 [buildozer]
 
-# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
-log_level = 2
+# (int) Log level (1 = info standar agar log tidak dipotong GitHub)
+log_level = 1
 
-# (str) Path to build artifact storage, absolute or relative to spec file
+# (str) Path to build artifact storage
 build_dir = ./.buildozer
