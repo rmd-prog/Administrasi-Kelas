@@ -34,7 +34,7 @@ jobs:
         mv cmdline-tools/* ~/.buildozer/android/platform/android-sdk/cmdline-tools/latest/ || true
         rm -rf cmdline-tools cmd.zip
         
-        # Buat symlink dummy sdkmanager agar Buildozer tidak memicu error missing file
+        # Link manual sdkmanager ke struktur folder lama
         ln -sf ~/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager ~/.buildozer/android/platform/android-sdk/tools/bin/sdkmanager
         
         # Inject Lisensi Google
